@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Simple Webpage</title>
+</head>
+<body>
+    <a href="{% url 'leads:lead-list' %}">Go back to leads</a>
+
+    <hr/>
+    <h1>create a new lead<h1>
+    <form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+
+    <button type="submit">submit</button>
+    </form >
+    
+</body>
+</html>
