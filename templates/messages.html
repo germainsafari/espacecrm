@@ -1,5 +1,6 @@
 {% if messages %}
     {% for message in messages %}
+    
         <div class="p-4 border-l-4
         {% if message.tags == 'success' %}
         bg-green-50 border-green-400
@@ -24,6 +25,7 @@
             ">
                 {{ message }}
             </p>
+
         </div>
     {% endfor %}
 {% endif %}
