@@ -133,3 +133,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'leads.User'
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
+LOGIN_REDIRECT_URL = "/leads.User"
+LOGIN_URL = "django.core.mail.backends.console.EmailBackend"
+LOGOUT_REDIRECT_URL = "/leads"
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
+CRISPY_TEMPLATE_PACKS = "tailwind"
